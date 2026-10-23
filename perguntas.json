@@ -1,0 +1,1051 @@
+[
+  {
+    "id": "1",
+    "modulo": "Introdução",
+    "nivel": "fácil",
+    "pergunta": "Quantas e quais são as dimensões da cidadania financeira, segundo o Caderno do BC?",
+    "pontos_chave": [
+      "Quatro dimensões",
+      "educação financeira",
+      "inclusão financeira",
+      "proteção ao consumidor de serviços financeiros",
+      "participação cidadã"
+    ]
+  },
+  {
+    "id": "2",
+    "modulo": "Introdução",
+    "nivel": "médio",
+    "pergunta": "Explique o conceito de cidadania financeira apresentado pelo BC e relacione-o à educação financeira.",
+    "pontos_chave": [
+      "Cidadania financeira é o exercício de direitos e deveres que permite ao cidadão gerenciar bem seus recursos financeiros",
+      "A educação financeira é o meio de promover comportamentos que melhoram o exercício dessa cidadania e o bem-estar financeiro",
+      "A educação financeira é uma de suas quatro dimensões, ao lado da inclusão financeira, proteção ao consumidor e participação cidadã"
+    ]
+  },
+  {
+    "id": "3",
+    "modulo": "Introdução",
+    "nivel": "médio",
+    "pergunta": "Descreva os três estados de bem-estar financeiro (adaptados do G20) e explique em qual se encaixa quem paga as contas, mas não tem reserva.",
+    "pontos_chave": [
+      "Em dificuldade: endividado e sem reserva",
+      "Em equilíbrio/instável: consegue pagar as contas, mas não tem reserva",
+      "Financeiramente saudável: paga as contas, tem reserva e realiza projetos",
+      "Quem paga as contas sem ter reserva se encaixa no estado em equilíbrio/instável"
+    ]
+  },
+  {
+    "id": "4",
+    "modulo": "Introdução",
+    "nivel": "fácil",
+    "pergunta": "Qual decreto instituiu a Estratégia Nacional de Educação Financeira (Enef) em 2010 e qual decreto a atualizou posteriormente?",
+    "pontos_chave": [
+      "Instituída pelo Decreto 7.397, de 22 de dezembro de 2010",
+      "Atualizada pelo Decreto 10.393, de 9 de junho de 2020"
+    ]
+  },
+  {
+    "id": "5",
+    "modulo": "Introdução",
+    "nivel": "médio",
+    "pergunta": "Explique como a Enef foi atualizada em 2020 e de que forma o BC se alinhou a essa estratégia.",
+    "pontos_chave": [
+      "Enef foi atualizada pelo Decreto 10.393 de 2020",
+      "O BC reestruturou suas iniciativas, projetos e programas de Cidadania Financeira",
+      "Objetivo de capacitar o cidadão a administrar seus recursos de maneira consciente",
+      "O Caderno de Educação Financeira é um dos produtos desse alinhamento"
+    ]
+  },
+  {
+    "id": "6",
+    "modulo": "Introdução",
+    "nivel": "médio",
+    "pergunta": "Descreva a missão do Banco Central do Brasil apresentada na introdução do Caderno.",
+    "pontos_chave": [
+      "Garantir a estabilidade de preços",
+      "Zelar por um sistema financeiro sólido e eficiente",
+      "Fomentar o bem-estar econômico da sociedade"
+    ]
+  },
+  {
+    "id": "7",
+    "modulo": "Módulo 1 – Relação com o dinheiro",
+    "nivel": "fácil",
+    "pergunta": "Que dado o BC apresenta sobre a dificuldade das pessoas de chegar ao fim do mês com seus rendimentos, e o que ele revela?",
+    "pontos_chave": [
+      "Duas em cada três pessoas tiveram dificuldade para chegar ao fim do mês nos últimos dois anos",
+      "Revela que muitos acham que sabem mais sobre dinheiro do que realmente sabem",
+      "Indica que o letramento financeiro não acompanhou a complexidade dos produtos financeiros"
+    ]
+  },
+  {
+    "id": "8",
+    "modulo": "Módulo 1 – Relação com o dinheiro",
+    "nivel": "fácil",
+    "pergunta": "Qual programa do BC levou a educação financeira para as escolas? Comente a importância dessa iniciativa.",
+    "pontos_chave": [
+      "Programa Aprender Valor, do BC",
+      "Importante pois até o início dos anos 2020 a educação financeira raramente estava nas escolas",
+      "Ajuda a inserir o tema na cultura coletiva desde a infância/juventude"
+    ]
+  },
+  {
+    "id": "9",
+    "modulo": "Módulo 1 – Sonhos e projetos",
+    "nivel": "fácil",
+    "pergunta": "Explique, com suas palavras, a diferença entre sonho e projeto segundo o Caderno do BC.",
+    "pontos_chave": [
+      "Sonho é o desejo vivo, aspiração, ideia ou objetivo abstrato a alcançar",
+      "Projeto é o sonho colocado no papel, definindo etapas, caminhos e esforços temporários",
+      "Um complementa o outro"
+    ]
+  },
+  {
+    "id": "10",
+    "modulo": "Módulo 1 – Sonhos e projetos",
+    "nivel": "médio",
+    "pergunta": "Cite e explique as características dos projetos apresentadas pelo BC.",
+    "pontos_chave": [
+      "Temporários (possuem início e fim definidos)",
+      "Planejados, executados e controlados",
+      "Geram produtos, serviços ou resultados específicos",
+      "Desenvolvidos em etapas sucessivas",
+      "Executados com recursos limitados"
+    ]
+  },
+  {
+    "id": "11",
+    "modulo": "Módulo 1 – Sonhos e projetos",
+    "nivel": "médio",
+    "pergunta": "Qual é o primeiro passo para transformar sonhos em projetos? Explique-o com um exemplo.",
+    "pontos_chave": [
+      "Saber exatamente onde se quer chegar (definir o objeto com precisão)",
+      "Exemplo: especificar modelo, ano e opcionais do carro em vez de apenas querer 'um carro'"
+    ]
+  },
+  {
+    "id": "12",
+    "modulo": "Módulo 1 – Sonhos e projetos",
+    "nivel": "médio",
+    "pergunta": "Explique o exemplo da compra da moto de R$24 mil apresentado pelo BC: quanto se poupa, a que taxa e em quanto tempo o objetivo é atingido?",
+    "pontos_chave": [
+      "Poupança de R$ 1.000 por mês",
+      "Aplicação com rendimento de 0,5% ao mês e alta liquidez",
+      "Objetivo atingido em 23 meses (devido aos rendimentos acumulados)",
+      "Possibilidade de negociar desconto ao comprar à vista"
+    ]
+  },
+  {
+    "id": "13",
+    "modulo": "Módulo 1 – Sonhos e projetos",
+    "nivel": "fácil",
+    "pergunta": "Qual é o quinto passo para transformar sonhos em projetos e por que ele é importante?",
+    "pontos_chave": [
+      "Comemorar as etapas intermediárias da caminhada",
+      "Manter a motivação e o foco ao longo do tempo sem desviar do objetivo principal"
+    ]
+  },
+  {
+    "id": "14",
+    "modulo": "Módulo 1 – Escolhas",
+    "nivel": "médio",
+    "pergunta": "Explique como emoção e razão devem se relacionar nas escolhas financeiras, segundo o BC.",
+    "pontos_chave": [
+      "Emoção e razão devem atuar em equilíbrio constante",
+      "Dar o peso adequado às emoções sem ignorar a razão",
+      "Evitar decisões baseadas puramente em apelos emocionais e busca de status"
+    ]
+  },
+  {
+    "id": "15",
+    "modulo": "Módulo 1 – Troca intertemporal",
+    "nivel": "fácil",
+    "pergunta": "Defina 'troca intertemporal' e dê um exemplo de como ela aparece nas decisões financeiras.",
+    "pontos_chave": [
+      "Efeito das escolhas de hoje na vida e nos recursos do futuro",
+      "Exemplo: usar crédito hoje (pagando juros) vs. poupar hoje para comprar à vista amanhã (recebendo rendimentos)"
+    ]
+  },
+  {
+    "id": "16",
+    "modulo": "Módulo 1 – Troca intertemporal",
+    "nivel": "médio",
+    "pergunta": "Explique a diferença entre assumir uma posição devedora e uma posição credora na troca intertemporal.",
+    "pontos_chave": [
+      "Posição devedora: usufrui no presente, paga no futuro com acréscimo de juros",
+      "Posição credora: adia o consumo presente, acumula e recebe rendimentos/juros no futuro"
+    ]
+  },
+  {
+    "id": "17",
+    "modulo": "Módulo 1 – Necessidade e desejo",
+    "nivel": "fácil",
+    "pergunta": "Usando a distinção entre necessidade e desejo do BC, explique por que fazer uma refeição em um restaurante de luxo é um desejo.",
+    "pontos_chave": [
+      "Alimentar-se é uma necessidade biológica indispensável",
+      "Escolher um restaurante de luxo é a forma específica selecionada para satisfazer essa necessidade (desejo)"
+    ]
+  },
+  {
+    "id": "18",
+    "modulo": "Módulo 1 – Necessidade e desejo",
+    "nivel": "médio",
+    "pergunta": "Por que tratar desejos como se fossem necessidades pode levar ao endividamento excessivo?",
+    "pontos_chave": [
+      "Recursos financeiros são limitados enquanto os desejos são ilimitados",
+      "Tratar desejos como essenciais destrói o controle orçamentário e gera dívidas"
+    ]
+  },
+  {
+    "id": "19",
+    "modulo": "Módulo 1 – Custo de oportunidade",
+    "nivel": "fácil",
+    "pergunta": "Defina custo de oportunidade segundo o Caderno do BC.",
+    "pontos_chave": [
+      "Benefício que se deixa de obter ao fazer uma escolha em detrimento de outra",
+      "O valor/preço da alternativa que foi renunciada"
+    ]
+  },
+  {
+    "id": "20",
+    "modulo": "Módulo 1 – Custo de oportunidade",
+    "nivel": "médio",
+    "pergunta": "Calcule quanto R$1 mil aplicados com rendimento líquido de 10% ao ano valem após um ano e relacione o resultado ao conceito de custo de oportunidade.",
+    "pontos_chave": [
+      "Cálculo: R$ 1.000 × 1,10 = R$ 1.100 ao final de um ano",
+      "R$ 100 em rendimentos abertos mão caso o dinheiro fosse gasto imediatamente",
+      "Esses R$ 100 representam o custo de oportunidade financeiro da decisão de gastar"
+    ]
+  },
+  {
+    "id": "21",
+    "modulo": "Módulo 1 – Custo de oportunidade",
+    "nivel": "fácil",
+    "pergunta": "O custo de oportunidade envolve apenas dinheiro? Justifique com o exemplo dado pelo BC.",
+    "pontos_chave": [
+      "Não, pode envolver recursos não financeiros como o tempo",
+      "Exemplo: dedicar tempo à leitura do Caderno significa abrir mão de ir à praia ou passear com amigos"
+    ]
+  },
+  {
+    "id": "22",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "fácil",
+    "pergunta": "Apresente a fórmula da poupança mostrada no Módulo 2 e explique o seu significado.",
+    "pontos_chave": [
+      "RECEITAS − DESPESAS = POUPANÇA",
+      "A poupança é o saldo positivo resultante de gastar menos do que se ganha"
+    ]
+  },
+  {
+    "id": "23",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "médio",
+    "pergunta": "Descreva as quatro etapas do método de elaboração de orçamento sugerido pelo BC.",
+    "pontos_chave": [
+      "1) Planejamento: estimar receitas e despesas futuras",
+      "2) Registro: anotar regularmente todas as movimentações",
+      "3) Agrupamento: categorizar os gastos (habitação, transporte, alimentação, etc.)",
+      "4) Avaliação: analisar o saldo (superavitário, equilibrado ou deficitário) e tomar ações"
+    ]
+  },
+  {
+    "id": "24",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "médio",
+    "pergunta": "Diferencie receitas fixas de receitas variáveis e dê exemplos de cada uma.",
+    "pontos_chave": [
+      "Receitas fixas: valores previsíveis e constantes (ex: salário fixo, aposentadoria, aluguel recebido)",
+      "Receitas variáveis: valores que oscilam conforme produção ou período (ex: comissões, serviços autônomos)"
+    ]
+  },
+  {
+    "id": "25",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "médio",
+    "pergunta": "Diferencie despesas fixas de despesas variáveis e explique em qual grupo o BC classifica a conta de luz.",
+    "pontos_chave": [
+      "Despesas fixas: valores constantes que não dependem diretamente do consumo (ex: aluguel)",
+      "Despesas variáveis: valores que variam mês a mês conforme o uso",
+      "A conta de luz é despesa variável pois seu valor depende do consumo medido"
+    ]
+  },
+  {
+    "id": "26",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "médio",
+    "pergunta": "Descreva as três situações possíveis de um orçamento e explique como se classifica aquele em que as despesas superam as receitas.",
+    "potnos_chave": [
+      "Deficitário: Despesas > Receitas",
+      "Neutro/Equilibrado: Despesas = Receitas",
+      "Superavitário: Despesas < Receitas",
+      "Quando as despesas superam as receitas, o orçamento é deficitário"
+    ]
+  },
+  {
+    "id": "27",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "fácil",
+    "pergunta": "Qual é a meta básica da gestão orçamentária segundo o BC? Justifique.",
+    "pontos_chave": [
+      "Manter o orçamento superavitário (receitas maiores que despesas)",
+      "Garantir margem para formação de reservas, alcance de metas e aposentadoria"
+    ]
+  },
+  {
+    "id": "28",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "médio",
+    "pergunta": "Explique o que significa 'pagar-se primeiro' e por que o BC recomenda essa prática.",
+    "pontos_chave": [
+      "Separar a quantia da poupança imediatamente ao receber a renda",
+      "Evita gastar o excedente ao longo do mês com despesas não planejadas"
+    ]
+  },
+  {
+    "id": "29",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "médio",
+    "pergunta": "O que são compromissos sazonais? Dê exemplos citados pelo BC.",
+    "pontos_chave": [
+      "Gastos recorrentes que acontecem em épocas específicas do ano",
+      "Exemplos: IPVA, IPTU, material escolar, seguros e festividades de fim de ano"
+    ]
+  },
+  {
+    "id": "30",
+    "modulo": "Módulo 2 – Família",
+    "nivel": "médio",
+    "pergunta": "Compare as abordagens 'impor limites' e 'buscar limites' no orçamento familiar e indique qual tende a gerar melhores resultados.",
+    "pontos_chave": [
+      "Impor limites: decisão unilateral que gera menor engajamento da família",
+      "Buscar limites: construção participativa e colaborativa das metas",
+      "'Buscar limites' gera melhores resultados pela união em prol dos objetivos"
+    ]
+  },
+  {
+    "id": "31",
+    "modulo": "Módulo 2 – Orçamento",
+    "nivel": "fácil",
+    "pergunta": "Descreva uma forma prática, recomendada pelo BC, de priorizar a poupança no dia a dia.",
+    "pontos_chave": [
+      "Configurar transferências ou aplicações automáticas programadas para o dia do recebimento do salário"
+    ]
+  },
+  {
+    "id": "32",
+    "modulo": "Módulo 3 – Crédito",
+    "nivel": "fácil",
+    "pergunta": "Explique a analogia que o BC faz entre juros e aluguel, do ponto de vista de quem paga e de quem recebe.",
+    "pontos_chave": [
+      "Juros são o 'aluguel' do dinheiro pelo tempo de uso",
+      "Para quem toma emprestado: custo pago pelo uso de recursos alheios",
+      "Para quem investe/empresta: taxa recebida como compensação por ceder o capital"
+    ]
+  },
+  {
+    "id": "33",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "médio",
+    "pergunta": "Calcule a dívida final de um empréstimo de R$1 mil por 6 meses a juros simples de 5% ao mês, mostrando o raciocínio.",
+    "pontos_chave": [
+      "Juros mensais: 5% de R$ 1.000 = R$ 50",
+      "Juros totais em 6 meses: R$ 50 × 6 = R$ 300",
+      "Montante final: R$ 1.000 + R$ 300 = R$ 1.300"
+    ]
+  },
+  {
+    "id": "34",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "difícil",
+    "pergunta": "Calcule a dívida final do mesmo empréstimo de R$1 mil por 6 meses a juros compostos de 5% ao mês e explique por que o resultado difere do de juros simples.",
+    "pontos_chave": [
+      "Cálculo: R$ 1.000 × (1,05)^6 = R$ 1.340,10",
+      "Resultado maior que juros simples (R$ 1.300) porque os juros incidem sobre o saldo acumulado de cada mês (juros sobre juros)"
+    ]
+  },
+  {
+    "id": "35",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "fácil",
+    "pergunta": "Explique o que são juros compostos e por que são chamados de 'juros sobre juros'.",
+    "pontos_chave": [
+      "Juros incorporados ao capital principal ao fim de cada período de capitalização",
+      "Chamados de 'juros sobre juros' porque a taxa do período seguinte incide sobre o montante atualizado"
+    ]
+  },
+  {
+    "id": "36",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "médio",
+    "pergunta": "Relate o exemplo de Helena, que poupou R$150 por mês dos 20 aos 30 anos: quanto ela acumulou aos 60 anos e quanto saiu de fato do seu bolso?",
+    "pontos_chave": [
+      "Acumulou R$ 148.786,58 aos 60 anos",
+      "Tirou do bolso apenas R$ 18.000,00 (120 depósitos de R$ 150)",
+      "O restante resultou do efeito dos juros compostos agindo ao longo de 40 anos"
+    ]
+  },
+  {
+    "id": "37",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "médio",
+    "pergunta": "No exemplo do BC, quanto Marta precisou desembolsar para acumular cerca de R$150 mil aos 60 anos? Explique por que esse valor foi maior que o de Helena.",
+    "pontos_chave": [
+      "Desembolsou R$ 54.000,00 (360 depósitos de R$ 150)",
+      "Valor 3 vezes maior porque começou 10 anos mais tarde e aproveitou menos o tempo de capitalização dos juros compostos"
+    ]
+  },
+  {
+    "id": "38",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "médio",
+    "pergunta": "Qual é a principal lição do exemplo de Helena e Marta sobre poupança para a aposentadoria?",
+      "pontos_chave": [
+      "O tempo é o fator determinante nos juros compostos",
+      "Iniciar a poupança cedo exige um aporte total do bolso significativamente menor para atingir o mesmo objetivo"
+    ]
+  },
+  {
+    "id": "39",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "fácil",
+    "pergunta": "Explique o alerta do BC sobre o crescimento exponencial causado pelos juros compostos.",
+    "pontos_chave": [
+      "Juros compostos causam crescimento acelerado (exponencial) no tempo",
+      "Trabalham a favor de quem poupa, mas multiplicam rapidamente as dívidas de quem deve"
+    ]
+  },
+  {
+    "id": "40",
+    "modulo": "Módulo 3 – Juros",
+    "nivel": "fácil",
+    "pergunta": "Qual ferramenta gratuita do BC foi usada para os cálculos do Caderno e onde ela pode ser acessada?",
+    "pontos_chave": [
+      "Calculadora do Cidadão",
+      "Acessível no site do Banco Central do Brasil e em aplicativos para smartphones"
+    ]
+  },
+  {
+    "id": "41",
+    "modulo": "Módulo 3 – Crédito",
+    "nivel": "médio",
+    "pergunta": "Cite e explique as vantagens do crédito para o tomador, segundo o BC.",
+    "pontos_chave": [
+      "Antecipar consumo sem precisar aguardar a acumulação de renda",
+      "Atender imprevistos ou emergências médicas/pessoais",
+      "Aproveitar oportunidades financeiras vantajosas"
+    ]
+  },
+  {
+    "id": "42",
+    "modulo": "Módulo 3 – Crédito",
+    "nivel": "médio",
+    "pergunta": "Cite e explique as desvantagens do crédito para o tomador, segundo o BC.",
+    "pontos_chave": [
+      "Custo de juros e encargos sobre o valor financiado",
+      "Risco de superendividamento e descontrole financeiro",
+      "Comprometimento e redução da renda livre disponível no futuro"
+    ]
+  },
+  {
+    "id": "43",
+    "modulo": "Módulo 3 – CET",
+    "nivel": "fácil",
+    "pergunta": "O que é o Custo Efetivo Total (CET) e quais elementos ele inclui?",
+    "pontos_chave": [
+      "Taxa percentual que representa o custo real e total de um financiamento ou empréstimo",
+      "Inclui taxa de juros, tarifas bancárias, impostos (IOF), seguros e demais encargos"
+    ]
+  },
+  {
+    "id": "44",
+    "modulo": "Módulo 3 – CET",
+    "nivel": "difícil",
+    "pergunta": "Explique o exemplo do BC em que um financiamento anunciado a 12% ao ano tem CET muito maior. Qual é esse CET e por que ele é tão diferente?",
+    "resposta_esperada": "Um financiamento de R$1 mil a 12% ao ano, em 5 prestações de R$205,73, teve descontados R$60 (R$50 de tarifa de cadastro e R$10 de IOF), e o cliente recebeu R$940. Pagando as mesmas prestações sobre um valor menor, a taxa efetiva (CET) foi de 43,93% ao ano, muito acima dos 12% anunciados.",
+    "pontos_chave": [
+      "CET calculado de 43,93% ao ano para uma taxa nominal anunciada de 12%",
+      "Diferença causada pelo desconto de R$ 60 em taxas/impostos (R$ 50 tarifa + R$ 10 IOF) diretamente do montante de R$ 1.000",
+      "O cliente recebeu R$ 940 líquidos, mas pagou parcelas calculadas sobre o valor cheio de R$ 1.000"
+    ]
+  },
+  {
+    "id": "45",
+    "modulo": "Módulo 3 – CET",
+    "nivel": "médio",
+    "pergunta": "No exemplo do CET, quanto o cliente efetivamente recebeu do financiamento de R$1 mil e por quê?",
+    "pontos_chave": [
+      "Recebeu R$ 940,00 líquidos",
+      "Foram deduzidos R$ 50,00 de taxa de cadastro e R$ 10,00 de Imposto sobre Operações Financeiras (IOF)"
+    ]
+  },
+  {
+    "id": "46",
+    "modulo": "Módulo 3 – CET",
+    "nivel": "médio",
+    "pergunta": "Por que, segundo o BC, avaliar apenas se a prestação cabe no orçamento não é suficiente ao contratar um empréstimo?",
+    "pontos_chave": [
+      "Esconde o custo real total do financiamento contratado",
+      "Impede comparar o CET de maneira justa entre concorrência e identificar tarifas embutidas"
+    ]
+  },
+  {
+    "id": "47",
+    "modulo": "Módulo 3 – Financiamento x à vista",
+    "nivel": "difícil",
+    "pergunta": "Descreva as condições do financiamento do carro feito por Helena no exemplo do BC.",
+    "pontos_chave": [
+      "Veículo de R$ 40.000,00 com entrada de R$ 16.000,00 (40%) e financiado em R$ 24.000,00 (60%)",
+      "Prazo de 60 meses com CET de 1,8% ao mês",
+      "Prestação mensal fixa de R$ 657,41"
+    ]
+  },
+  {
+    "id": "48",
+    "modulo": "Módulo 3 – Financiamento x à vista",
+    "nivel": "difícil",
+    "pergunta": "Explique a estratégia de Marta para comprar o carro à vista e em quanto tempo ela conseguiu.",
+    "pontos_chave": [
+      "Manteve R$ 16.000 aplicados e depositou R$ 657,41 mensais a 0,5% a.m.",
+      "Atingiu o valor integral do carro e comprou à vista em 31 meses (menos de 3 anos)",
+      "Manteve a disciplina de poupar até completar os 60 meses"
+    ]
+  },
+  {
+    "id": "49",
+    "modulo": "Módulo 3 – Financiamento x à vista",
+    "nivel": "difícil",
+    "pergunta": "O que o BC chama de 'custo da impaciência' no exemplo do carro e qual é o seu valor?",
+    "pontos_chave": [
+      "Diferença do patrimônio acumulado entre Marta e Helena ao final dos 60 meses",
+      "Valor calculado em R$ 26.124,24 (R$ 50.724,24 − R$ 24.600,00)",
+      "Representa o valor perdido pelo pagamento de juros na antecipação do consumo"
+    ]
+  },
+  {
+    "id": "50",
+    "modulo": "Módulo 3 – Financiamento x à vista",
+    "nivel": "médio",
+    "pergunta": "Qual foi o patrimônio final de Helena no exemplo do carro e por que ela terminou sem reserva?",
+    "pontos_chave": [
+      "Patrimônio de R$ 24.600,00 (valor desvalorizado do carro após 5 anos)",
+      "Ficou sem reservas pois usou a entrada inteira e gastou o excedente mensal nas 60 parcelas com juros"
+    ]
+  },
+  {
+    "id": "51",
+    "modulo": "Módulo 3 – Crédito fácil",
+    "nivel": "fácil",
+    "pergunta": "Como o BC orienta agir diante de ofertas de 'crédito fácil' ou 'pré-aprovado'? Justifique.",
+    "pontos_chave": [
+      "Desconfiar de propostas facilitadas ou milagrosas",
+      "Optar por instituições autorizadas pelo Banco Central e comparar CETs",
+      "Essas linhas costumam ter taxas altíssimas e podem esconder fraudes"
+    ]
+  },
+  {
+    "id": "52",
+    "modulo": "Módulo 3 – Endividamento",
+    "nivel": "médio",
+    "pergunta": "Explique por que, segundo o BC, muitos 'imprevistos' que estouram o orçamento não são realmente imprevistos.",
+    "pontos_chave": [
+      "Trata-se frequentemente de despesas previsíveis/sazonais esquecidas no planejamento",
+      "Exemplos: IPTU, IPVA, compras escolares e celebrações de fim de ano"
+    ]
+  },
+  {
+    "id": "53",
+    "modulo": "Módulo 3 – Endividamento",
+    "nivel": "médio",
+    "pergunta": "Cite as origens das dívidas apontadas pelo Caderno do BC.",
+    "pontos_chave": [
+      "Despesas sazonais não planejadas",
+      "Publicidade e apelo ao consumo impulsivo",
+      "Orçamentos permanentemente deficitários",
+      "Queda não compensada na renda da família",
+      "Emergências médicas e separação conjugal",
+      "Falta de letramento financeiro"
+    ]
+  },
+  {
+    "id": "54",
+    "modulo": "Módulo 3 – Endividamento",
+    "nivel": "fácil",
+    "pergunta": "Além de Serasa e SPC, em que cadastro é incluído quem emite cheques sem fundos? Quais são as consequências da inscrição em cadastros restritivos?",
+    "pontos_chave": [
+      "Inclusão no CCF (Cadastro de Emitentes de Cheques sem Fundos)",
+      "Consequências: bloqueio ou restrição severa de crédito no mercado",
+      "Constrangimentos e impactos negativos na estabilidade financeira"
+    ]
+  },
+  {
+    "id": "55",
+    "modulo": "Módulo 3 – Sair das dívidas",
+    "nivel": "médio",
+    "pergunta": "Descreva os passos indicados pelo BC para sair de uma situação de endividamento excessivo.",
+    "pontos_chave": [
+      "Reconhecer e encarar a situação real",
+      "Mapear todos os débitos (valores, juros, credores)",
+      "Interromper a criação de novas dívidas",
+      "Renegociar contratos (inclusive via portabilidade)",
+      "Cortar despesas, obter receitas extras e procurar assistência gratuita"
+    ]
+  },
+  {
+    "id": "56",
+    "modulo": "Módulo 3 – Sair das dívidas",
+    "nivel": "médio",
+    "pergunta": "O que é a portabilidade do crédito e como ela pode ajudar quem está endividado?",
+    "pontos_chave": [
+      "Direito de transferir operação de crédito para outra instituição que ofereça menores taxas/CET",
+      "Permite reduzir o custo do financiamento e pagar parcelas/montante menores"
+    ]
+  },
+  {
+    "id": "57",
+    "modulo": "Módulo 3 – Tipos de gastos",
+    "nivel": "médio",
+    "pergunta": "O que são gastos de desperdício segundo o BC? Classifique multas e deixar a torneira aberta.",
+    "pontos_chave": [
+      "Gastos que não trazem satisfação, bem-estar ou valor útil",
+      "Multas por atraso e desperdício de água/luz são gastos de desperdício que devem ser zerados"
+    ]
+  },
+  {
+    "id": "58",
+    "modulo": "Módulo 3 – Tipos de gastos",
+    "nivel": "médio",
+    "pergunta": "O que o BC recomenda fazer com cada tipo de gasto (necessário, supérfluo e desperdício)?",
+    "pontos_chave": [
+      "Gastos de desperdício: eliminar completamente",
+      "Gastos supérfluos: reduzir ou cortar temporariamente",
+      "Gastos necessários: otimizar, negociar ou buscar alternativas mais baratas"
+    ]
+  },
+  {
+    "id": "59",
+    "modulo": "Módulo 3 – Tipos de gastos",
+    "nivel": "fácil",
+    "pergunta": "Defina gastos supérfluos e explique por que TV a cabo e roupas de marca se encaixam nessa categoria.",
+    "pontos_chave": [
+      "Gastos associados ao conforto, estilo e desejos, sem serem cruciais para a sobrevivência",
+      "TV a cabo e grifes trazem prazer e status, mas não são itens essenciais, podendo ser cortados"
+    ]
+  },
+  {
+    "id": "60",
+    "modulo": "Módulo 4 – Consumo",
+    "nivel": "médio",
+    "pergunta": "Explique o que significa, segundo o BC, consumir de forma planejada.",
+    "pontos_chave": [
+      "Priorizar aquisições que agregam real valor ao indivíduo e família",
+      "Gastar com inteligência, otimizando o dinheiro e eliminando desperdícios em vez de parar de consumir"
+    ]
+  },
+  {
+    "id": "61",
+    "modulo": "Módulo 4 – Consumo",
+    "nivel": "médio",
+    "pergunta": "Até quando durou a hiperinflação no Brasil, segundo o Caderno, e que marco a encerrou?",
+    "pontos_chave": [
+      "Hiperinflação durou até o ano de 1994",
+      "Encerrada com o lançamento e implementação do Plano Real"
+    ]
+  },
+  {
+    "id": "62",
+    "modulo": "Módulo 4 – Consumo",
+    "nivel": "médio",
+    "pergunta": "Explique o conceito de 'memória inflacionária' e como ela dificulta o planejamento do consumo.",
+    "pontos_chave": [
+      "Permanência de comportamentos defensivos herdados do período hiperinflacionário",
+      "Hábitos como estocar produtos e gastar a renda no dia do pagamento prejudicam a noções de preços e o planejamento de longo prazo"
+    ]
+  },
+  {
+    "id": "63",
+    "modulo": "Módulo 4 – Técnicas de venda",
+    "nivel": "médio",
+    "pergunta": "Calcule quanto representa por mês um anúncio de 'apenas R$3,99 por dia' e explique a técnica de venda envolvida.",
+    "pontos_chave": [
+      "Cálculo: R$ 3,99 × 30 dias = R$ 119,70 ao mês (~R$ 1.436,40/ano)",
+      "Técnica do fracionamento de tempo: reduz a percepção de custo dividindo o preço em parcelas diárias insignificantes"
+    ]
+  },
+  {
+    "id": "64",
+    "modulo": "Módulo 4 – Técnicas de venda",
+    "nivel": "médio",
+    "pergunta": "Explique a técnica de venda chamada 'ancoragem de preços'.",
+    "pontos_chave": [
+      "Apresentar primeiro um produto com preço elevado para criar uma referência mental (âncora)",
+      "Faz os preços intermediários ou com desconto parecerem vantajosos para o consumidor"
+    ]
+  },
+  {
+    "id": "65",
+    "modulo": "Módulo 4 – Técnicas de venda",
+    "nivel": "fácil",
+    "pergunta": "Explique a estratégia de 'urgência e escassez' usada no comércio e dê exemplos de mensagens.",
+    "pontos_chave": [
+      "Estímulo ao impulso de compra gerando ansiedade pelo esgotamento ou fim do prazo",
+      "Exemplos de urgência: 'Só hoje', 'Últimas horas'",
+      "Exemplos de escassez: 'Últimas unidades', 'Edição limitada'"
+    ]
+  },
+  {
+    "id": "66",
+    "modulo": "Módulo 4 – Supermercado",
+    "nivel": "médio",
+    "pergunta": "Por que os supermercados costumam colocar o açougue e a padaria no fundo da loja?",
+    "pontos_chave": [
+      "Obrigar o cliente a percorrer todos os corredores do estabelecimento",
+      "Aumentar a exposição a outros produtos e incentivar compras por impulso"
+    ]
+  },
+  {
+    "id": "67",
+    "modulo": "Módulo 4 – Supermercado",
+    "nivel": "fácil",
+    "pergunta": "Qual é o objetivo da ausência de relógios nos supermercados?",
+    "pontos_chave": [
+      "Fazer o cliente perder a noção do tempo dentro do ambiente",
+      "Incentivar uma permanência mais longa e aumentar o ticket de compras"
+    ]
+  },
+  {
+    "id": "68",
+    "modulo": "Módulo 4 – Pix",
+    "nivel": "fácil",
+    "pergunta": "O que é o Pix e quais vantagens o BC aponta para o consumidor?",
+    "pontos_chave": [
+      "Sistema de pagamentos instantâneos criado pelo Banco Central, gratuito para pessoas físicas",
+      "Transferências e pagamentos efetuados em segundos, 24/7, com segurança e potencial para descontos à vista"
+    ]
+  },
+  {
+    "id": "69",
+    "modulo": "Módulo 4 – Consumo consciente",
+    "nivel": "fácil",
+    "pergunta": "Quais são os 5 Rs do consumo consciente e qual é o seu objetivo?",
+    "pontos_chave": [
+      "Repensar, Reduzir, Reutilizar, Reciclar e Recusar",
+      "Objetivo de diminuir o desperdício, mitigar custos e preservar os recursos ambientais"
+    ]
+  },
+  {
+    "id": "70",
+    "modulo": "Módulo 4 – Consumo consciente",
+    "nivel": "médio",
+    "pergunta": "Em quais dimensões o consumo consciente contribui para a sustentabilidade? Explique.",
+    "pontos_chave": [
+      "Dimensão ambiental: redução da extração e da poluição",
+      "Dimensão social: valorização do trabalho justo e comunitário",
+      "Dimensão econômica: viabilidade financeira tanto para comprador quanto para fabricante"
+    ]
+  },
+  {
+    "id": "71",
+    "modulo": "Módulo 4 – Consumo consciente",
+    "nivel": "médio",
+    "pergunta": "Compare o comportamento do consumidor consumista e do consumidor consciente na hora de comprar, segundo a tabela adaptada do Instituto Akatu.",
+    "pontos_chave": [
+      "Consumista: age por impulso, movido a status e sem avaliar os impactos futuros",
+      "Consciente: pondera necessidades, avalia impactos socioambientais e aplica os 5 Rs"
+    ]
+  },
+  {
+    "id": "72",
+    "modulo": "Módulo 4 – Cédulas",
+    "nivel": "médio",
+    "pergunta": "O que é o 'entesouramento' de moedas e quais consequências ele traz?",
+    "pontos_chave": [
+      "Ato de guardar moedas paradas em cofres ou gavetas sem circulação",
+      "Gera escassez de troco no comércio e eleva custos estatais na fabricação de novas moedas"
+    ]
+  },
+  {
+    "id": "73",
+    "modulo": "Módulo 4 – Cédulas",
+    "nivel": "fácil",
+    "pergunta": "Quais hábitos ajudam a conservar as cédulas, segundo o BC?",
+    "pontos_chave": [
+      "Guardar notas desdobradas ou com apenas uma dobra em carteiras",
+      "Não rasgar, rabiscar, grampear ou molhar cédulas",
+      "Trocar notas danificadas em agências bancárias"
+    ]
+  },
+  {
+    "id": "74",
+    "modulo": "Módulo 5 – Poupança",
+    "nivel": "fácil",
+    "pergunta": "Explique a diferença entre poupança e caderneta de poupança.",
+    "pontos_chave": [
+      "Poupança: ato de economizar ou a reserva financeira acumulada",
+      "Caderneta de poupança: modalidade específica de aplicação financeira de renda fixa"
+    ]
+  },
+  {
+    "id": "75",
+    "modulo": "Módulo 5 – Poupança",
+    "nivel": "médio",
+    "pergunta": "Quando a caderneta de poupança paga rendimento e o que é a 'data de aniversário'?",
+    "pontos_chave": [
+      "Rendimento creditado uma vez ao mês",
+      "Data de aniversário é o dia mensal correspondente à data do depósito no qual os juros são computados"
+    ]
+  },
+  {
+    "id": "76",
+    "modulo": "Módulo 5 – Investimento",
+    "nivel": "fácil",
+    "pergunta": "Quais são as três características dos investimentos segundo o BC? Defina cada uma.",
+    "pontos_chave": [
+      "Liquidez: rapidez e facilidade de resgate do capital a um valor justo",
+      "Risco: probabilidade de variação negativa ou perda do valor aplicado",
+      "Rentabilidade: taxa de retorno obtida sobre o montante investido"
+    ]
+  },
+  {
+    "id": "77",
+    "modulo": "Módulo 5 – Investimento",
+    "nivel": "médio",
+    "pergunta": "Explique o conceito de liquidez e o que significa um investimento com liquidez D+5.",
+    "pontos_chave": [
+      "Liquidez mede a facilidade de conversão do ativo em dinheiro na conta",
+      "D+5 significa que o resgate solicitado fica financeiramente disponível 5 dias úteis após o pedido"
+    ]
+  },
+  {
+    "id": "78",
+    "modulo": "Módulo 5 – Investimento",
+    "nivel": "médio",
+    "pergunta": "Por que imóveis e obras de arte são considerados investimentos de baixa liquidez?",
+    "pontos_chave": [
+      "Exigem longos prazos de negociação e venda no mercado para obter um preço adequado"
+    ]
+  },
+  {
+    "id": "79",
+    "modulo": "Módulo 5 – Investimento",
+    "nivel": "médio",
+    "pergunta": "Como se deve reagir a uma oferta que promete alta liquidez, baixo risco e alta rentabilidade ao mesmo tempo? Justifique.",
+    "pontos_chave": [
+      "Desconfiar imediatamente de indícios de fraude/golpe",
+      "Trilema dos investimentos: não é possível ter o nível máximo dos três fatores simultaneamente"
+    ]
+  },
+  {
+    "id": "80",
+    "modulo": "Módulo 5 – Investimento",
+    "nivel": "médio",
+    "pergunta": "Onde o BC recomenda aplicar a reserva de emergência e por quê?",
+    "pontos_chave": [
+      "Em aplicações de baixíssimo risco e alta liquidez (ex: D+0 ou D+1)",
+      "Garantir acesso imediato aos recursos no momento de imprevistos sem sofrer perdas de capital"
+    ]
+  },
+  {
+    "id": "81",
+    "modulo": "Módulo 5 – Perfil",
+    "nivel": "fácil",
+    "pergunta": "Descreva os três perfis de investidor apresentados pelo BC.",
+    "pontos_chave": [
+      "Conservador: foco total na segurança e preservação de capital",
+      "Moderado: busca equilíbrio entre segurança e rentabilidade com risco controlado",
+      "Arrojado: prioriza alta rentabilidade e tolera flutuações e riscos elevados"
+    ]
+  },
+  {
+    "id": "82",
+    "modulo": "Módulo 5 – Perfil",
+    "nivel": "médio",
+    "pergunta": "Caracterize o perfil de investidor conservador.",
+    "pontos_chave": [
+      "Prioriza a previsibilidade e mitiga riscos de perda",
+      "Aceita retornos mais modestos",
+      "Ativos indicados: caderneta de poupança, Títulos Públicos (Tesouro SELIC/IPCA) e CDBs"
+    ]
+  },
+  {
+    "id": "83",
+    "modulo": "Módulo 5 – Perfil",
+    "nivel": "médio",
+    "pergunta": "Para qual perfil de investidor os fundos multimercado são mais compatíveis e por quê?",
+    "pontos_chave": [
+      "Perfil arrojado ou moderado-arrojado",
+      "Fundos com ampla liberdade de alocação em derivativos, câmbio e ações, oferecendo maior volatilidade"
+    ]
+  },
+  {
+    "id": "84",
+    "modulo": "Módulo 5 – FGC",
+    "nivel": "médio",
+    "pergunta": "O que são o FGC e o FGCoop e qual é o limite de proteção informado pelo Caderno (junho/2025)?",
+    "pontos_chave": [
+      "Mecanismos de garantia para depositantes em caso de intervenção/falência da instituição",
+      "FGC (bancos) e FGCoop (cooperativas de crédito)",
+      "Garantia de até R$ 250.000,00 por CPF/CNPJ por instituição financeira"
+    ]
+  },
+  {
+    "id": "85",
+    "modulo": "Módulo 5 – Renda fixa e variável",
+    "nivel": "médio",
+    "pergunta": "Diferencie investimentos de renda fixa e de renda variável.",
+    "pontos_chave": [
+      "Renda fixa: regras de rentabilidade conhecidas no momento da aplicação (prefixada ou pós-fixada), menor risco",
+      "Renda variável: retorno imprevisível e sujeito às oscilações do mercado (ex: ações), com maior potencial de ganho e risco"
+    ]
+  },
+  {
+    "id": "86",
+    "modulo": "Módulo 5 – Apostas e criptoativos",
+    "nivel": "fácil",
+    "pergunta": "Por que, segundo o BC, apostas, bets e loterias não podem ser consideradas investimentos?",
+    "pontos_chave": [
+      "Dependem exclusivamente da sorte ou aleatoriedade",
+      "Expectativa matemática de retorno negativa, com elevado risco de perda integral do capital"
+    ]
+  },
+  {
+    "id": "87",
+    "modulo": "Módulo 5 – Apostas e criptoativos",
+    "nivel": "médio",
+    "pergunta": "O que o BC afirma sobre as moedas virtuais (criptomoedas)?",
+    "pontos_chave": [
+      "Não são emitidas, lastreadas ou garantidas por autoridades monetárias centrais",
+      "Não possuem funções plenas de moeda oficial",
+      "Apresentam volatilidade extrema e risco integral ao investidor"
+    ]
+  },
+  {
+    "id": "88",
+    "modulo": "Módulo 6 – Riscos",
+    "nivel": "fácil",
+    "pergunta": "Como o BC define risco?",
+    "pontos_chave": [
+      "Evento incerto ou de data incerta, cuja ocorrência independe da vontade das partes"
+    ]
+  },
+  {
+    "id": "89",
+    "modulo": "Módulo 6 – Riscos",
+    "nivel": "médio",
+    "pergunta": "Descreva as quatro maneiras de lidar com os riscos ao patrimônio apresentadas pelo BC.",
+    "pontos_chave": [
+      "1) Retiver/Assumir o risco sem agir",
+      "2) Prevenir e adotar medidas de mitigação",
+      "3) Formar reservas financeiras próprias de emergência",
+      "4) Transferir o risco através de contratação de seguros"
+    ]
+  },
+  {
+    "id": "90",
+    "modulo": "Módulo 6 – Golpes",
+    "nivel": "médio",
+    "pergunta": "Que proporção de brasileiros foi vítima de golpe ou fraude financeira, segundo o Caderno? Cite dicas de prevenção.",
+    "pontos_chave": [
+      "1 em cada 4 brasileiros já foi vítima de fraude financeira",
+      "Dicas: manter softwares atualizados, não compartilhar senhas, desconfiar de ofertas irrealistas e verificar remetentes de links"
+    ]
+  },
+  {
+    "id": "91",
+    "modulo": "Módulo 6 – Golpes",
+    "nivel": "médio",
+    "pergunta": "Como agir diante de um pedido de transferência de dinheiro feito por um conhecido por aplicativo de mensagens? Justifique.",
+    "pontos_chave": [
+      "Confirmar a identidade realizando uma ligação direta ou contato por outro canal antes de enviar o dinheiro",
+      "Riscos de clonagem de conta e clonagem de voz/imagem por Inteligência Artificial"
+    ]
+  },
+  {
+    "id": "92",
+    "modulo": "Módulo 6 – Seguros",
+    "nivel": "médio",
+    "pergunta": "No contrato de seguro, o que é o 'prêmio'?",
+    "pontos_chave": [
+      "O valor pago pelo segurado à seguradora para obter a cobertura e vigência do seguro"
+    ]
+  },
+  {
+    "id": "93",
+    "modulo": "Módulo 6 – Seguros",
+    "nivel": "médio",
+    "pergunta": "No contrato de seguro, o que é a 'franquia' e por que ela deve ser considerada na reserva de emergência?",
+    "pontos_chave": [
+      "Valor estipulado na apólice que o segurado paga para acionar a cobertura em caso de sinistro",
+      "Deve estar prevista na reserva de emergência para cobrir o desembolso imediato em imprevistos"
+    ]
+  },
+  {
+    "id": "94",
+    "modulo": "Módulo 6 – Seguros",
+    "nivel": "fácil",
+    "pergunta": "No contrato de seguro, o que é o 'sinistro'?",
+    "pontos_chave": [
+      "A ocorrência do evento danoso previsto e coberto na apólice do seguro"
+    ]
+  },
+  {
+    "id": "95",
+    "modulo": "Módulo 6 – Seguros",
+    "nivel": "médio",
+    "pergunta": "Qual órgão autoriza o funcionamento das seguradoras de seguro-saúde e qual autoriza as demais seguradoras?",
+    "pontos_chave": [
+      "Seguros de saúde: Regulados e fiscalizados pela ANS (Agência Nacional de Saúde Suplementar)",
+      "Demais seguros (auto, vida, patrimônio): Regulados e autorizados pela Susep (Superintendência de Seguros Privados)"
+    ]
+  },
+  {
+    "id": "96",
+    "modulo": "Módulo 6 – Aposentadoria",
+    "nivel": "médio",
+    "pergunta": "Qual era a expectativa de vida do brasileiro em 2024 e como ela evoluiu desde 1980? Que implicação isso tem para a aposentadoria?",
+    "pontos_chave": [
+      "Subiu de 62,5 anos (1980) para 76,6 anos (2024)",
+      "Exige um planejamento financeiro mais prolongado e robusto para manter a qualidade de vida no envelhecimento"
+    ]
+  },
+  {
+    "id": "97",
+    "modulo": "Módulo 6 – Aposentadoria",
+    "nivel": "médio",
+    "pergunta": "Quais trabalhadores fazem parte do Regime Geral da Previdência Social (RGPS) e quem o administra?",
+    "pontos_chave": [
+      "Trabalhadores regidos pela CLT, autônomos e empregados domésticos",
+      "Administrado pelo INSS (Instituto Nacional do Seguro Social)"
+    ]
+  },
+  {
+    "id": "98",
+    "modulo": "Módulo 6 – Aposentadoria",
+    "nivel": "médio",
+    "pergunta": "Qual órgão fiscaliza as Entidades Fechadas de Previdência Complementar (fundos de pensão)? E qual fiscaliza as entidades abertas?",
+    "pontos_chave": [
+      "Entidades Fechadas (Fundos de Pensão): Fiscalizadas pela Previc",
+      "Entidades Abertas (Bancos/Seguradoras): Fiscalizadas pela Susep"
+    ]
+  },
+  {
+    "id": "99",
+    "modulo": "Módulo 6 – Aposentadoria",
+    "nivel": "médio",
+    "pergunta": "Qual é a principal diferença entre PGBL e VGBL apontada pelo BC?",
+    "pontos_chave": [
+      "Diferença na forma e incidência de tributação do Imposto de Renda no resgate e abatimento nas declarações completas"
+    ]
+  },
+  {
+    "id": "100",
+    "modulo": "Apresentação",
+    "nivel": "fácil",
+    "pergunta": "Qual instituição publicou o 'Guia de Educação Financeira – Como organizar suas finanças' e com que apoio?",
+    "pontos_chave": [
+      "Publicado pelo Instituto Brasileiro de Defesa do Consumidor (Idec)",
+      "Apoiado pela Secretaria Nacional do Consumidor (Senacon/MJ)"
+    ]
+  }
+]

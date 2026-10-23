@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutor SIA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#1238C9; --azul-claro:#E6ECFF; --tinta:#101A3F; --tinta-2:#4A5378;
+  --papel:#F6F8FF; --superficie:#FFFFFF; --linha:#D5DCF2;
+  --raio:#FFC21A; --verde:#128C5A; --caneta:#D23B2E; --ambar:#B86E00;
+  --titulo:"Bricolage Grotesque",system-ui,sans-serif;
+  --texto:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--azul:#7D97FF;--azul-claro:#1B2550;--tinta:#EEF1FF;--tinta-2:#A9B1D6;
+        --papel:#0D1330;--superficie:#151C40;--linha:#2A3466;--verde:#3DCB8C;--caneta:#FF6A5C;--ambar:#F0A73A;color-scheme:dark}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font:17px/1.55 var(--texto)}
+header{background:var(--azul);color:#fff;padding:18px 20px 0}
+.topo{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.logo{width:34px;height:34px;border-radius:9px;background:#fff;display:grid;place-items:center}
+.logo svg{width:20px;height:20px}
+h1{font:800 1.45rem/1 var(--titulo);margin:0;letter-spacing:-.01em}
+nav{max-width:760px;margin:14px auto 0;display:flex;gap:4px}
+nav button{font:700 .95rem var(--texto);background:transparent;color:#DCE3FF;border:0;padding:10px 14px;border-radius:10px 10px 0 0;cursor:pointer}
+nav button[aria-selected=true]{background:var(--papel);color:var(--tinta)}
+main{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+section[hidden]{display:none}
+h2{font:800 1.6rem/1.15 var(--titulo);margin:0 0 6px;letter-spacing:-.015em}
+h3{font:600 1.05rem/1.3 var(--titulo);margin:22px 0 6px}
+p{margin:0 0 10px}
+.sub{color:var(--tinta-2)}
+label{font-weight:700;display:block;margin:14px 0 6px}
+input,select,textarea{width:100%;font:inherit;color:var(--tinta);background:var(--superficie);border:2px solid var(--linha);border-radius:10px;padding:10px 12px}
+textarea{min-height:150px;resize:vertical}
+input:focus,select:focus,textarea:focus,button:focus-visible{outline:3px solid var(--raio);outline-offset:2px;border-color:var(--azul)}
+.modulos{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}
+.modulos button{font:700 .9rem var(--texto);border:2px solid var(--linha);background:var(--superficie);color:var(--tinta);padding:7px 12px;border-radius:999px;cursor:pointer}
+.modulos button[aria-pressed=true]{background:var(--tinta);border-color:var(--tinta);color:var(--papel)}
+.questao{background:var(--superficie);border:2px solid var(--linha);border-left:8px solid var(--azul);border-radius:6px 14px 14px 6px;padding:18px 20px}
+.questao .meta{font-size:.85rem;color:var(--tinta-2);margin-bottom:6px}
+.questao .enunciado{font:600 1.2rem/1.35 var(--titulo)}
+.linha-acoes{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+.btn{font:700 1rem var(--texto);border:0;border-radius:12px;padding:12px 20px;cursor:pointer}
+.btn-principal{background:var(--azul);color:#fff}
+.btn-principal:disabled{opacity:.55;cursor:wait}
+.btn-sec{background:transparent;color:var(--azul);padding:12px 6px;text-decoration:underline}
+.contador{margin-left:auto;font-size:.88rem;color:var(--tinta-2)}
+.aviso{border-radius:10px;padding:10px 14px;margin-top:14px;background:var(--azul-claro)}
+.aviso.erro{background:color-mix(in srgb,var(--caneta) 14%,transparent);color:var(--tinta)}
+/* resultado: o carimbo é o elemento marcante */
+.resultado{margin-top:28px;display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start}
+.carimbo{width:140px;height:140px;border-radius:50%;border:5px solid currentColor;display:grid;place-items:center;text-align:center;transform:rotate(-8deg);color:var(--verde);position:relative}
+.carimbo::after{content:"";position:absolute;inset:7px;border-radius:50%;border:2px dashed currentColor;opacity:.6}
+.carimbo .n{font:800 2.9rem/1 var(--titulo)}
+.carimbo .v{font:700 .8rem/1.1 var(--texto);margin-top:4px;max-width:96px}
+.carimbo.meio{color:var(--ambar)} .carimbo.ruim{color:var(--caneta)}
+@media (prefers-reduced-motion:no-preference){.carimbo{animation:carimba .38s cubic-bezier(.2,1.6,.4,1)}}
+@keyframes carimba{from{transform:rotate(-8deg) scale(1.6);opacity:0}to{transform:rotate(-8deg) scale(1);opacity:1}}
+.bloco{border-top:2px solid var(--linha);padding-top:4px}
+.dica{background:color-mix(in srgb,var(--raio) 22%,var(--superficie));border-radius:10px;padding:12px 14px;margin:10px 0}
+.travado{color:var(--tinta-2);font-style:italic}
+.fontes{list-style:none;padding:0;margin:6px 0 0}
+.fontes li{font-size:.9rem;border-left:3px solid var(--linha);padding:4px 0 4px 12px;margin:8px 0;color:var(--tinta-2)}
+.fontes b{color:var(--tinta)}
+.selo{display:inline-block;font-size:.8rem;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--azul-claro);margin-left:6px}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--linha)}
+.numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.numeros div{background:var(--superficie);border:2px solid var(--linha);border-radius:12px;padding:12px}
+.numeros strong{display:block;font:800 1.7rem/1.1 var(--titulo)}
+.numeros span{font-size:.85rem;color:var(--tinta-2)}
+@media (max-width:560px){.resultado{grid-template-columns:1fr}.carimbo{margin:0 auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="topo">
+    <div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2 5 14h6l-2 8 10-13h-6l1-7z" fill="#FFC21A" stroke="#1238C9" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+    <h1>Tutor SIA</h1>
+  </div>
+  <nav role="tablist">
+    <button role="tab" aria-selected="true" data-aba="aluno">Responder</button>
+    <button role="tab" aria-selected="false" data-aba="professor">Professor</button>
+    <button role="tab" aria-selected="false" data-aba="numeros">Números</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ================= ALUNO ================= -->
+  <section id="aluno">
+    <h2>Explique com suas palavras</h2>
+    <p class="sub">Sem alternativas para chutar: você escreve, o tutor corrige com base nas apostilas e nos slides da aula.</p>
+    <label for="nome">Seu nome ou código</label>
+    <input id="nome" placeholder="Ex.: Ana 2º ano">
+    <div class="modulos" id="modulos" aria-label="Módulo"></div>
+    <div class="questao" id="questao" aria-live="polite">
+      <div class="meta" id="q-meta"></div>
+      <div class="enunciado" id="q-texto">Carregando perguntas…</div>
+    </div>
+    <label for="resposta">Sua resposta</label>
+    <textarea id="resposta" placeholder="Escreva como se estivesse explicando para um colega."></textarea>
+    <div class="linha-acoes">
+      <button class="btn btn-principal" id="enviar">Enviar para correção</button>
+      <button class="btn btn-sec" id="proxima">Pular pergunta</button>
+      <span class="contador" id="contador">0 caracteres</span>
+    </div>
+    <div id="mensagem"></div>
+    <div id="resultado"></div>
+  </section>
+
+  <!-- ================= PROFESSOR ================= -->
+  <section id="professor" hidden>
+    <h2>Ensine o tutor com a sua aula</h2>
+    <p class="sub">Envie o PDF dos slides. O texto vira referência para corrigir as respostas daquele módulo em poucos segundos.</p>
+    <label for="arquivo">PDF dos slides</label>
+    <input type="file" id="arquivo" accept=".pdf,.md,.txt">
+    <label for="up-modulo">Módulo</label>
+    <select id="up-modulo"></select>
+    <label for="up-turma">Turma</label>
+    <input id="up-turma" value="todas">
+    <label for="senha">Senha do professor (se configurada)</label>
+    <input id="senha" type="password">
+    <div class="linha-acoes"><button class="btn btn-principal" id="enviar-pdf">Enviar slides</button></div>
+    <div id="up-msg"></div>
+    <h3>O que o tutor já conhece</h3>
+    <div id="lista-materiais" class="sub">Carregando…</div>
+  </section>
+
+  <!-- ================= NÚMEROS ================= -->
+  <section id="numeros" hidden>
+    <h2>Está funcionando?</h2>
+    <p class="sub">Indicadores que o extrato do datathon não tinha: ID da pergunta, tempo real, texto colado e evolução entre tentativas.</p>
+    <div class="numeros" id="cards-num"></div>
+    <h3>Perguntas mais difíceis</h3>
+    <div id="tabela-num"></div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const ORDEM = [["","Todos"],["69","Dinheiro e Economia"],["70","Matemática Financeira"],["71","Renda Fixa"],["68","Reforço"]];
+const MODS = Object.fromEntries(ORDEM);
+let perguntas = [], fila = [], atual = null, inicio = 0, colou = false, moduloSel = "";
+
+// ---------- abas ----------
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll("main section").forEach(s => s.hidden = s.id !== b.dataset.aba);
+  if (b.dataset.aba === "professor") carregarMateriais();
+  if (b.dataset.aba === "numeros") carregarNumeros();
+});
+
+// ---------- aluno ----------
+try { $("#nome").value = localStorage.getItem("tutor_nome") || ""; } catch(e) {}
+$("#nome").onchange = () => { try { localStorage.setItem("tutor_nome", $("#nome").value); } catch(e) {} };
+
+ORDEM.forEach(([id, nome]) => {
+  const b = document.createElement("button");
+  b.textContent = nome; b.setAttribute("aria-pressed", id === "");
+  b.onclick = () => { moduloSel = id; document.querySelectorAll("#modulos button").forEach(x => x.setAttribute("aria-pressed", x === b)); montarFila(); proxima(); };
+  $("#modulos").appendChild(b);
+});
+
+function embaralhar(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function montarFila(){ fila = embaralhar(perguntas.filter(p => !moduloSel || p.modulo === moduloSel)); }
+function proxima(){
+  if (!fila.length) montarFila();
+  atual = fila.shift();
+  $("#q-meta").textContent = `${MODS[atual.modulo]} · nível ${atual.nivel} · pergunta ${atual.id}`;
+  $("#q-texto").textContent = atual.pergunta;
+  $("#resposta").value = ""; $("#resultado").innerHTML = ""; $("#mensagem").innerHTML = "";
+  contar(); inicio = Date.now(); colou = false; $("#resposta").focus();
+}
+function contar(){ const n = $("#resposta").value.trim().length; $("#contador").textContent = `${n} caracteres${n < 20 ? " (mínimo 20)" : ""}`; }
+$("#resposta").addEventListener("input", contar);
+$("#resposta").addEventListener("paste", () => colou = true);
+$("#proxima").onclick = proxima;
+
+function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function aviso(alvo, texto, erro){ $(alvo).innerHTML = `<div class="aviso ${erro?"erro":""}">${esc(texto)}</div>`; }
+
+$("#enviar").onclick = async () => {
+  const nome = $("#nome").value.trim();
+  if (!nome) return aviso("#mensagem", "Escreva seu nome ou código antes de enviar.", true);
+  const btn = $("#enviar"); btn.disabled = true; btn.textContent = "Corrigindo…"; $("#mensagem").innerHTML = "";
+  try {
+    const r = await fetch("/corrigir", {method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({aluno_id:nome, pergunta_id:atual.id, resposta:$("#resposta").value,
+                            tempo_segundos:(Date.now()-inicio)/1000, colou_texto:colou})});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || "Erro na correção.");
+    mostrar(d);
+  } catch(e) { aviso("#mensagem", e.message, true); }
+  btn.disabled = false; btn.textContent = "Enviar de novo";
+};
+
+function mostrar(c){
+  const classe = c.nota >= 8 ? "" : c.nota >= 4 ? "meio" : "ruim";
+  const nomeV = {correta:"Correta", parcialmente_correta:"Quase lá", incorreta:"Ainda não"}[c.veredito];
+  const fontes = (c.fontes||[]).map(f => `<li><b>${esc(f.fonte)}</b>, p. ${f.pagina}<span class="selo">${f.tipo === "slides" ? "slide da aula" : "apostila"}</span><br>“${esc(f.trecho)}”</li>`).join("");
+  $("#resultado").innerHTML = `
+    <div class="resultado">
+      <div class="carimbo ${classe}" role="img" aria-label="Nota ${c.nota} de 10, ${nomeV}"><div><div class="n">${c.nota}</div><div class="v">${nomeV}</div></div></div>
+      <div>
+        <div class="bloco"><h3>O que você acertou</h3><p>${esc(c.o_que_acertou)}</p></div>
+        <div class="bloco"><h3>O que faltou</h3><p>${esc(c.o_que_faltou)}</p></div>
+        ${c.nota < 8 ? `<div class="dica"><b>Pense nisto:</b> ${esc(c.dica)}</div>` : ""}
+        <div class="bloco"><h3>Explicação</h3>${c.explicacao_liberada ? `<p>${esc(c.explicacao_completa)}</p>`
+          : `<p class="travado">Use a dica e tente de novo. A explicação completa aparece na próxima tentativa.</p>`}</div>
+        ${c.resposta_rapida ? `<div class="aviso">Você respondeu bem rápido. Leia a correção com calma antes de seguir.</div>` : ""}
+        ${fontes ? `<div class="bloco"><h3>De onde veio a correção</h3><ul class="fontes">${fontes}</ul></div>` : ""}
+        <div class="linha-acoes"><button class="btn btn-sec" onclick="proxima()">Próxima pergunta</button></div>
+      </div>
+    </div>`;
+  inicio = Date.now(); colou = false;
+}
+
+fetch("/perguntas").then(r => r.json()).then(l => { perguntas = l; montarFila(); proxima(); })
+  .catch(() => $("#q-texto").textContent = "Não consegui carregar as perguntas. O servidor está rodando?");
+
+// ---------- professor ----------
+const sel = $("#up-modulo");
+[["geral","Geral (vale para todos)"], ...ORDEM.filter(([k]) => k)]
+  .forEach(([k,v]) => sel.insertAdjacentHTML("beforeend", `<option value="${k}">${esc(v)}</option>`));
+
+$("#enviar-pdf").onclick = async () => {
+  const f = $("#arquivo").files[0];
+  if (!f) return aviso("#up-msg", "Escolha um PDF primeiro.", true);
+  const fd = new FormData(); fd.append("arquivo", f); fd.append("modulo", sel.value); fd.append("turma", $("#up-turma").value || "todas");
+  const btn = $("#enviar-pdf"); btn.disabled = true; btn.textContent = "Lendo o PDF…";
+  try {
+    const r = await fetch("/professor/slides", {method:"POST", body:fd, headers: $("#senha").value ? {"x-senha": $("#senha").value} : {}});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || "Falha no envio.");
+    aviso("#up-msg", `Slides enviados: ${d.arquivo} virou ${d.trechos} trechos no módulo ${d.modulo}.`);
+    carregarMateriais();
+  } catch(e) { aviso("#up-msg", e.message, true); }
+  btn.disabled = false; btn.textContent = "Enviar slides";
+};
+
+async function carregarMateriais(){
+  const d = await (await fetch("/professor/materiais")).json();
+  const linhas = (lista, tipo) => lista.map(m => `<tr><td>${esc(m.fonte)}</td><td>${tipo}</td><td>${esc(m.modulo)}</td><td>${m.trechos}</td></tr>`).join("");
+  const corpo = linhas(d.apostilas, "Apostila") + linhas(d.slides, "Slides");
+  $("#lista-materiais").innerHTML = corpo ? `<table><thead><tr><th>Arquivo</th><th>Tipo</th><th>Módulo</th><th>Trechos</th></tr></thead><tbody>${corpo}</tbody></table>`
+    : "Nada indexado ainda. Rode <code>python ingestao.py</code> no terminal.";
+}
+
+// ---------- números ----------
+async function carregarNumeros(){
+  const m = await (await fetch("/metricas")).json();
+  const card = (v, t, suf="") => `<div><strong>${v ?? "–"}${v != null ? suf : ""}</strong><span>${t}</span></div>`;
+  $("#cards-num").innerHTML = card(m.tentativas,"respostas corrigidas") + card(m.alunos,"alunos")
+    + card(m.nota_media_1a_tentativa,"nota média na 1ª tentativa") + card(m.ganho_medio_1a_para_2a,"ganho da 1ª para a 2ª tentativa"," pts")
+    + card(m.pct_respostas_rapidas,"respostas em menos de 15 s","%") + card(m.pct_texto_colado,"respostas com texto colado","%");
+  $("#tabela-num").innerHTML = m.por_pergunta.length ? `<table><thead><tr><th>Pergunta</th><th>Tentativas</th><th>Nota média</th></tr></thead><tbody>${
+    m.por_pergunta.map(p => `<tr><td>${esc(p.pergunta_id)}</td><td>${p.tentativas}</td><td>${p.nota_media}</td></tr>`).join("")}</tbody></table>` : `<p class="sub">Ainda não há respostas.</p>`;
+}
+</script>
+</body>
+</html>
