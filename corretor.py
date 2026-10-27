@@ -15,7 +15,7 @@ import config
 
 # Gemini (Google): chave gratuita em aistudio.google.com, sem cartão de crédito.
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-MODELO_GEMINI = os.getenv("MODELO_GEMINI", "gemini-flash-latest").strip()
+MODELO_GEMINI = os.getenv("MODELO_GEMINI", "gemini-flash-lite-latest").strip()  # o "lite" é o mais rápido
 
 TRECHOS_POR_COLECAO = 4
 
@@ -138,7 +138,7 @@ def chamar_gemini(mensagem: str) -> dict:
         "Content-Type": "application/json", "x-goog-api-key": GEMINI_API_KEY})
     for tentativa in range(2):
         try:
-            with urllib.request.urlopen(pedido, timeout=60) as r:
+            with urllib.request.urlopen(pedido, timeout=45) as r:
                 dados = json.loads(r.read().decode("utf-8"))
             break
         except urllib.error.HTTPError as e:
@@ -148,6 +148,10 @@ def chamar_gemini(mensagem: str) -> dict:
                 time.sleep(2)
                 continue
             raise RuntimeError(f"O Gemini recusou o pedido (erro {e.code}).")
+        except (TimeoutError, urllib.error.URLError):
+            if tentativa == 0:
+                continue
+            raise RuntimeError("A IA demorou demais para responder. Tente enviar de novo em alguns segundos.")
     try:
         texto = dados["candidates"][0]["content"]["parts"][0]["text"]
         return json.loads(texto)
