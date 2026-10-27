@@ -1,12 +1,21 @@
-"""Corretor: busca o material relevante no Chroma e pede ao Claude para corrigir.
+"""Corretor: busca o material relevante e pede à IA (Gemini grátis ou Claude) para corrigir.
 
 Isto é RAG (Retrieval-Augmented Generation): a IA não é 'treinada' de novo.
 A cada correção, buscamos os trechos mais parecidos com a pergunta e mandamos
 junto, com a instrução de corrigir APENAS com base neles.
 """
+import json
+import os
 import re
+import time
+import urllib.error
+import urllib.request
 
 import config
+
+# Gemini (Google): chave gratuita em aistudio.google.com, sem cartão de crédito.
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
+MODELO_GEMINI = os.getenv("MODELO_GEMINI", "gemini-flash-latest").strip()
 
 TRECHOS_POR_COLECAO = 4
 
@@ -98,6 +107,86 @@ def chamar_claude(mensagem: str) -> dict:
     raise RuntimeError("O modelo não devolveu a correção no formato esperado.")
 
 
+def _esquema_gemini(esq: dict) -> dict:
+    """Converte o esquema da ferramenta do Claude para o formato que o Gemini aceita."""
+    tipos = {"object": "OBJECT", "string": "STRING", "integer": "INTEGER", "array": "ARRAY"}
+    novo = {"type": tipos[esq["type"]]}
+    if "enum" in esq:
+        novo["enum"] = esq["enum"]
+    if "properties" in esq:
+        novo["properties"] = {k: _esquema_gemini(v) for k, v in esq["properties"].items()}
+    if "required" in esq:
+        novo["required"] = esq["required"]
+    if "items" in esq:
+        novo["items"] = _esquema_gemini(esq["items"])
+    return novo
+
+
+def chamar_gemini(mensagem: str) -> dict:
+    url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
+           f"{MODELO_GEMINI}:generateContent")
+    corpo = json.dumps({
+        "system_instruction": {"parts": [{"text": INSTRUCOES}]},
+        "contents": [{"role": "user", "parts": [{"text": mensagem}]}],
+        "generationConfig": {
+            "temperature": 0.2,
+            "responseMimeType": "application/json",
+            "responseSchema": _esquema_gemini(FERRAMENTA["input_schema"]),
+        },
+    }).encode("utf-8")
+    pedido = urllib.request.Request(url, data=corpo, method="POST", headers={
+        "Content-Type": "application/json", "x-goog-api-key": GEMINI_API_KEY})
+    for tentativa in range(2):
+        try:
+            with urllib.request.urlopen(pedido, timeout=60) as r:
+                dados = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                raise RuntimeError("Muita gente usando o tutor agora. Espere um minuto e tente de novo.")
+            if e.code in (500, 503) and tentativa == 0:
+                time.sleep(2)
+                continue
+            raise RuntimeError(f"O Gemini recusou o pedido (erro {e.code}).")
+    try:
+        texto = dados["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(texto)
+    except (KeyError, IndexError, json.JSONDecodeError):
+        raise RuntimeError("O modelo não devolveu a correção no formato esperado.")
+
+
+def _normalizar(c: dict) -> dict:
+    """Garante que a correção tenha todos os campos que o app usa."""
+    try:
+        nota = max(0, min(10, int(round(float(c.get("nota", 0))))))
+    except (TypeError, ValueError):
+        nota = 0
+    c["nota"] = nota
+    if c.get("veredito") not in ("correta", "parcialmente_correta", "incorreta"):
+        c["veredito"] = "correta" if nota >= 8 else "parcialmente_correta" if nota >= 4 else "incorreta"
+    if c.get("confianca") not in ("alta", "media", "baixa"):
+        c["confianca"] = "media"
+    for campo in ("o_que_acertou", "o_que_faltou", "dica", "explicacao_completa"):
+        c[campo] = str(c.get(campo) or "")
+    fontes = []
+    for f in c.get("fontes_usadas") or []:
+        try:
+            fontes.append(int(f))
+        except (TypeError, ValueError):
+            pass
+    c["fontes_usadas"] = fontes
+    return c
+
+
+def chamar_ia(mensagem: str) -> dict:
+    """Usa o Gemini (grátis) se houver GEMINI_API_KEY; senão, o Claude."""
+    if GEMINI_API_KEY:
+        return chamar_gemini(mensagem)
+    if config.ANTHROPIC_API_KEY and not config.ANTHROPIC_API_KEY.startswith("cole-"):
+        return chamar_claude(mensagem)
+    raise RuntimeError("Falta a chave da IA: configure GEMINI_API_KEY (grátis) ou ANTHROPIC_API_KEY.")
+
+
 def resumo(texto: str, limite: int = 280) -> str:
     """Trecho curto e sem marcações de Markdown, para mostrar ao aluno."""
     limpo = re.sub(r"[#*>]+", "", texto)
@@ -109,7 +198,7 @@ def corrigir(pergunta: str, resposta: str, modulo: str | None = None,
              pontos_chave=None, _llm=None) -> dict:
     """Função principal. _llm permite trocar o Claude por um simulador nos testes."""
     trechos = buscar_trechos(pergunta + " " + " ".join(pontos_chave or []), modulo)
-    correcao = (_llm or chamar_claude)(montar_mensagem(pergunta, resposta, trechos, pontos_chave))
+    correcao = _normalizar((_llm or chamar_ia)(montar_mensagem(pergunta, resposta, trechos, pontos_chave)))
     usados = set(correcao.get("fontes_usadas") or [])
     correcao["fontes"] = [
         {"numero": i + 1, "fonte": t["fonte"], "pagina": t["pagina"], "tipo": t["tipo"],
