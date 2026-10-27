@@ -118,7 +118,7 @@ def corrigir(pedido: PedidoCorrecao, request: Request):
     except RuntimeError as e:
         raise HTTPException(503, str(e))
     except Exception as e:  # erro de rede, chave inválida, modelo errado etc.
-        raise HTTPException(503, f"Não consegui falar com o Claude: {e}")
+        raise HTTPException(503, f"Não consegui falar com a IA: {e}")
 
     # Pedagogia: na 1ª tentativa errada o aluno recebe só a dica; a explicação completa
     # aparece quando ele acerta ou a partir da 2ª tentativa (erro vira aprendizado, não chute).
