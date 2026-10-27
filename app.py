@@ -2,13 +2,16 @@
 Depois abra http://127.0.0.1:8000  (documentação automática em /docs)
 """
 import json
+import os
 import shutil
+import time
+from collections import defaultdict, deque
 import sqlite3
 import tempfile
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import FastAPI, File, Form, Header, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, Header, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
@@ -20,6 +23,30 @@ app = FastAPI(title="Tutor SIA", description="Correção de respostas abertas co
 PERGUNTAS = json.loads((config.PASTA / "perguntas.json").read_text(encoding="utf-8"))
 POR_ID = {p["id"]: p for p in PERGUNTAS}
 MIN_CARACTERES = 20
+
+
+# ---------- limite de requisições (protege sua chave da Anthropic) ----------
+LIMITE_POR_IP = int(os.getenv("LIMITE_POR_IP", "10"))     # correções por pessoa por hora
+LIMITE_DIARIO = int(os.getenv("LIMITE_DIARIO", "200"))    # correções no total por dia
+_historico_ip = defaultdict(deque)
+_contador_dia = {"data": None, "total": 0}
+
+
+def checar_limite(request: Request):
+    ip = (request.headers.get("x-forwarded-for") or request.client.host).split(",")[0].strip()
+    agora = time.time()
+    fila = _historico_ip[ip]
+    while fila and agora - fila[0] > 3600:
+        fila.popleft()
+    if len(fila) >= LIMITE_POR_IP:
+        raise HTTPException(429, "Você atingiu o limite de correções por hora desta demonstração. Tente mais tarde!")
+    hoje = datetime.now().date()
+    if _contador_dia["data"] != hoje:
+        _contador_dia.update(data=hoje, total=0)
+    if _contador_dia["total"] >= LIMITE_DIARIO:
+        raise HTTPException(429, "A demonstração atingiu o limite de hoje. Volte amanhã!")
+    fila.append(agora)
+    _contador_dia["total"] += 1
 
 
 # ---------- banco de registros (SQLite): o que faltou medir no datathon ----------
@@ -64,7 +91,7 @@ def listar_modulos():
 
 
 @app.post("/corrigir")
-def corrigir(pedido: PedidoCorrecao):
+def corrigir(pedido: PedidoCorrecao, request: Request):
     resposta = pedido.resposta.strip()
     if len(resposta) < MIN_CARACTERES:
         raise HTTPException(422, f"Explique com suas palavras (mínimo de {MIN_CARACTERES} caracteres).")
@@ -78,6 +105,8 @@ def corrigir(pedido: PedidoCorrecao):
         pergunta, modulo, pontos = pedido.pergunta_livre, pedido.modulo, None
     else:
         raise HTTPException(422, "Envie pergunta_id ou pergunta_livre.")
+
+    checar_limite(request)
 
     con = db()
     anteriores = con.execute("SELECT COUNT(*) FROM tentativas WHERE aluno_id=? AND pergunta_id=?",
